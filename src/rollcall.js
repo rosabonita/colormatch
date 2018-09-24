@@ -155,7 +155,7 @@ const RollCall = {
         // add a StartInputHandler directive using the ROLL_CALL recognizers and events
         ctx.directives.push(GadgetDirectives.startInputHandler({ 
             'timeout': ctx.timeout, 
-            'proxies': ['btn1', 'btn2, 'btn3', 'btn4'],
+            'proxies': ['btn1', 'btn2', 'btn3', 'btn4'],
             'recognizers': ROLL_CALL_RECOGNIZERS, 
             'events': ROLL_CALL_EVENTS 
         }));
