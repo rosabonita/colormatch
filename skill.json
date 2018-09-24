@@ -1,0 +1,68 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "An addicting, family-friendly game where Alexa calls out colors and players hit their buttons to earn the high score",
+          "examplePhrases": [
+            "Alexa, open color match",
+            "Alexa, launch color match"
+          ],
+          "keywords": [
+            "buttons",
+            "games"
+          ],
+          "name": "color match",
+          "description": "A Color Match skill that showcases Echo Buttons functionality. An addicting, family-friendly game where Alexa calls out colors and players hit their buttons to earn the high score."
+        },
+        "en-GB": {
+          "summary": "An addicting, family-friendly game where Alexa calls out colors and players hit their buttons to earn the high score",
+            "examplePhrases": [
+              "Alexa, open colour match",
+              "Alexa, launch colour match"
+          ],
+          "keywords": [
+            "buttons",
+            "games"
+          ],
+          "name": "colour match",
+          "description": "A Colour Changer skill that showcases Echo Buttons functionality. An addicting, family-friendly game where Alexa calls out colors and players hit their buttons to earn the high score."
+        }      
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Open the skill and follow the prompts.",
+      "category": "GAMES",
+      "distributionCountries": [],
+      "gadgetSupport": {
+        "requirement": "REQUIRED",
+        "numPlayersMin": 1,
+        "numPlayersMax": 4,
+        "minGadgetButtons": 1,
+        "maxGadgetButtons": 4
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces": [
+          {
+            "type": "GAME_ENGINE"
+          },
+          {
+            "type": "GADGET_CONTROLLER"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": true,
+      "isExportCompliant": true,
+      "containsAds": false
+    }
+  }
+}
