@@ -35,8 +35,7 @@ const ROLL_CALL_ANIMATIONS = {
 //  We'll use proxies to refer to the four different buttons because we don't know ahead of time 
 //  which four buttons will be used 
 // The four recogniziers will be used as triggers for two input handler events, used during roll call. 
-const ROLL_CALL_RECOGNIZERS = {
-    ""recognizers": {     
+const ROLL_CALL_RECOGNIZERS = {    
       "roll_call_recognizer_btn_1": {  
         "type": "match",
         "fuzzy": true,
